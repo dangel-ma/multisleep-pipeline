@@ -8,9 +8,9 @@ pipeline {
                         label "kari-cluster-scratch"
                     }
                     steps {
-                        date
-                        sleep 60
-                        date    
+                        sh 'date'
+                        sh 'sleep 60'
+                        sh 'date'    
                     }
                 }
                 stage('Sleep 2') {
