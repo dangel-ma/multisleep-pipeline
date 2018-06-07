@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label"basic-ecs-agents"
+        label "basic-ecs-agents"
     }
     stages {
         stage('Big sleep') {
