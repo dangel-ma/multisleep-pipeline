@@ -1,12 +1,11 @@
 pipeline {
-    agent none
+    agent {
+        label"basic-ecs-agents"
+    }
     stages {
         stage('Big sleep') {
             parallel {
                 stage('Sleep 1') {
-                    agent {
-                        label "kari-cluster-scratch"
-                    }
                     steps {
                         sh 'date'
                         sh 'sleep 60'
@@ -14,9 +13,6 @@ pipeline {
                     }
                 }
                 stage('Sleep 2') {
-                    agent {
-                        label "kari-cluster-scratch"
-                    }
                     steps {
                         sh 'date'
                         sh 'sleep 60'
@@ -24,9 +20,6 @@ pipeline {
                     }
                 }
                 stage('Sleep 3') {
-                    agent {
-                        label "kari-cluster-scratch"
-                    }
                     steps {
                         sh 'date'
                         sh 'sleep 60'
@@ -34,9 +27,6 @@ pipeline {
                     }
                 }
                 stage('Sleep 4') {
-                    agent {
-                        label "kari-cluster-scratch"
-                    }
                     steps {
                         sh 'date'
                         sh 'sleep 60'
@@ -44,9 +34,6 @@ pipeline {
                     }
                 }
                 stage('Sleep 5') {
-                    agent {
-                        label "kari-cluster-scratch"
-                    }
                     steps {
                         sh 'date'
                         sh 'sleep 60'
