@@ -5,7 +5,7 @@ pipeline {
             parallel {
                 stage('Sleep 1') {
                     agent {
-                        label "jenkins-ec2-agent"
+                        label "tycho-jenkins-jenkins-slave"
                     }
                     steps {
                         sh 'date'
@@ -15,7 +15,7 @@ pipeline {
                 }
                 stage('Sleep 2') {
                     agent {
-                        label "jenkins-ec2-agent"
+                        label "tycho-jenkins-jenkins-slave"
                     }
                     steps {
                         sh 'date'
@@ -25,7 +25,7 @@ pipeline {
                 }
                 stage('Sleep 3') {
                     agent {
-                        label "jenkins-ec2-agent"
+                        label "tycho-jenkins-jenkins-slave"
                     }
                     steps {
                         sh 'date'
@@ -35,7 +35,7 @@ pipeline {
                 }
                 stage('Sleep 4') {
                     agent {
-                        label "jenkins-ec2-agent"
+                        label "tycho-jenkins-jenkins-slave"
                     }
                     steps {
                         sh 'date'
@@ -45,7 +45,7 @@ pipeline {
                 }
                 stage('Sleep 5') {
                     agent {
-                        label "jenkins-ec2-agent"
+                        label "tycho-jenkins-jenkins-slave"
                     }
                     steps {
                         sh 'date'
